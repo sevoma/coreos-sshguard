@@ -5,7 +5,7 @@ Requires=docker.service
 
 [Service]
 TimeoutStartSec=0
-Environment=IMAGE_NAME=mischief/sshguard:1.6.0
+Environment=IMAGE_NAME=sshguard:latest
 
 ExecStartPre=-/usr/bin/docker kill %p
 ExecStartPre=-/usr/bin/docker rm %p
